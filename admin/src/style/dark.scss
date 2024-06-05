@@ -1,0 +1,370 @@
+.app.dark{
+    background-color: #222;
+    color: rgb(156, 156, 156);
+
+    // .chartGrid{
+    //     stroke: rgb(230, 225, 225);
+    // }
+
+    .table{
+        background-color: #222;
+        box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+        .noRows{
+            color: #ccc;
+        }
+        
+        .tableCell{
+            color: #ccc;
+            border-color: gray;
+
+            .status{
+                // padding: 5px;
+                // border-radius: 5px;
+        
+                &.Approved{
+                    color: rgb(0, 255, 0);
+                    background-color: rgba(83, 255, 83, 0.15)
+                }
+                &.Pending{
+                    color: rgb(255, 195, 42);
+                    background-color: rgba(255, 195, 42, 0.150);
+                }
+            }
+        }
+    }
+
+    .navbar{
+        color: #999;
+        border-color: #333;
+
+        .search{
+            border-color: gray;
+            box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+            input{
+                color: #999;
+            }
+        }
+    }
+
+    .sidebar{
+        background-color: #222;
+        border-color: #333;
+
+
+        span{
+            color: #999;
+        }
+
+        &.package{
+            margin-bottom: -758px;
+        }
+
+        .top{
+            .logo{
+                color: #999;
+            }
+        }
+
+        hr{
+            border-color: #333;
+            
+        }
+
+        ul{
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                transition: 0.6s background-color;
+
+                &:hover{
+                    background-color: #787277;
+                    // transform: translateY(-5px);
+                }
+
+                &.active {
+                    padding: 2px;
+                    cursor: pointer;
+                    color: black;
+                    background-color: #4b4a4b;
+                    }
+                .icon{
+                    color: #999;
+                }
+            }
+        }
+    }
+
+    .widget{
+        box-shadow: 2px 2px 6px 4px #cbc7c73b;
+    }
+
+
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.table.css-11xur9t-MuiPaper-root-MuiTableContainer-root{
+        &.contacted{
+            color: rgb(0, 255, 0);
+            background-color: rgba(0, 255, 0, 0.15);
+        }
+    }
+
+    .dataTable,.statusDataTable{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #222;
+        color: white;
+        box-shadow: 2px 2px 6px 4px #cbc7c75c;
+
+        .MuiDataGrid-columnHeaderTitleContainer,.css-yrdy0g-MuiDataGrid-columnHeaderRow{
+            background-color: #222;
+            color: white;
+        }
+
+        .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+            color: red;
+        }
+        
+        .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiTablePagination-selectIcon.MuiSelect-iconStandard.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon,.MuiButtonBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.PrivateSwitchBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.MuiDataGrid-checkboxInput.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+            color: white;
+        }
+
+        .MuiDataGrid-row.MuiDataGrid-row:hover{
+            background-color: #444;
+        }
+
+        .dataGrid,.dataGrid_{
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+
+            .MuiDataGrid-cell{
+                .status{
+                    &.pending {
+                        color: rgb(255, 47, 0);
+                        background-color: rgba(255, 0, 0, 0.112);
+                      }
+                
+                      &.contacted {
+                        color: rgb(0, 255, 0);
+                        background-color: rgba(27, 229, 27, 0.15);
+                      }
+                
+                      &.checked {
+                        color: rgb(234, 255, 0);
+                        background-color: rgba(218, 165, 32, 0.15);
+                      }
+                }
+            }
+
+            .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+                color: #999;
+            }
+        }
+    }
+
+            .viewButton{
+                color: #ccc;
+                border: none;
+                transition: 0.95s background-color;
+                
+                &:hover{
+                    background-color: #5252f1;
+                }
+
+            }
+            
+            
+            .deleteButton{
+                color: #ccc;
+                border: none;
+                transition: 0.95s background-color;
+
+                &:hover{
+                    background-color: #9d1414;
+                }
+            }
+
+            .cellWithStatus{
+                color: gray;
+                border: none;
+
+                &.active{
+                    background-color: rgba(52, 255, 52, 0.245);
+                }
+        
+                &.passive{
+                    background-color: rgba(255, 50, 50, 0.245);
+                }
+        
+                &.pending{
+                    background-color: rgba(254, 211, 103, 0.245);
+                }
+            }
+        
+
+        .assignTo{
+            padding: 10px;
+            .adminDropdown{
+                font-size: 16px;
+                color: #000;
+            }
+        }
+    
+
+    input{
+        background-color: white;
+        height: 22px;
+    }
+
+    .enquiryPage{
+        .enquiryPageContainer{
+            .enquiries{
+                .enquiryBox{
+                    .remarks{
+                        background-color: purple;
+                        border-radius: 4px;
+                        color: white;
+                    }
+                    background-color: #222;
+                    h2{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .new{
+        .newContainer{
+            .top{
+                box-shadow: 2px 2px 6px 4px #cbc7c73b;
+            }
+
+            .bottom{
+                .right{
+                    .formInput{
+                        .mainPackageSelect{
+                            color:#999;
+                        }
+                    }
+                }
+            }
+        }
+    }       
+
+    .single{
+        .singleContainer{
+            .top{
+                .singlePackage{
+                    background-color: #222;
+                    color: wheat;
+                    label,h2{
+                        font-size: 20px;
+                        color: white;
+                    }
+                    input{
+                        color: #999;
+                    }
+                    }
+                }
+            }
+        }
+    .profile{
+        .profileContainer{
+            .profileContent{
+                .profileBox{
+                    box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+                    .editButton{
+                        color: #3700ff;
+                        background-color: #4025a245;
+
+                        &:hover{
+                            background-color: #2a00c345;
+                        }
+                    }
+
+                    .item{
+                        .details{
+                            .detailItem{
+                                .itemValue{
+                                    input[type="text"]{
+                                        color: #ccc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .save{
+                        color: #3700ff;
+                        background-color: #4025a245;
+
+                        &:hover{
+                            background-color: #2a00c345;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .user{
+        .userContainer{
+            
+            .userBox{
+                background-color: #222;
+                h1{
+                color: white;
+            }
+            .userDetails{
+                .detailItem{
+                    .itemKey{
+                        color: grey;
+                    }
+                    .itemValue{
+                        color: white;
+                    }
+                }
+                padding: 18px;
+                box-shadow: 2px 2px 6px 4px #c6c6c63b;
+            }
+        }
+        .enquiriesBox{
+            background-color: #222;
+            h2{
+                color: white;
+            }
+            .table{
+                background-color: #222;
+                box-shadow: 2px 2px 6px 4px #cbc7c73b;
+        
+                .noRows{
+                    color: #ccc;
+                }
+                
+                .tableCell{
+                    color: #ccc;
+                    border-color: gray;
+        
+                    .status{
+                        // padding: 5px;
+                        // border-radius: 5px;
+                
+                        &.Approved{
+                            color: rgb(0, 255, 0);
+                            background-color: rgba(83, 255, 83, 0.15)
+                        }
+                        &.Pending{
+                            color: rgb(255, 195, 42);
+                            background-color: rgba(255, 195, 42, 0.150);
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+

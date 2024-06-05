@@ -1,0 +1,69 @@
+// adminProfiles.scss
+
+.adminProfilesContainer {
+    display: flex;
+    height: 80%;
+  }
+  
+  .mainContent {
+    flex: 6;
+    padding: 5px;
+    
+  }
+  
+  .dataGridContainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    
+  }
+  
+  .datatableTitle {
+    width: 100%;
+    font-size: 24px;
+    color: rgba(245, 111, 111, 0.932);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .datatable {
+    width: 100%;
+    height: 540px; // Adjust the height as needed
+  }
+  
+  .MuiDataGrid-root {
+    font-family: 'Roboto', sans-serif; // Change font family as needed
+  }
+  
+  .MuiDataGrid-row {
+    cursor: pointer; // Change cursor style as needed
+    
+  }
+  
+  .MuiDataGrid-row:hover {
+    background-color: #f0f0f0; // Change hover background color as needed
+  }
+  
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+    
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }

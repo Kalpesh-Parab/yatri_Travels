@@ -1,0 +1,34 @@
+.viewAllContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.viewTitle {
+    width: 1024px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .viewAllContainer {
+        gap: 20px; 
+    }
+
+    .viewTitle {
+        width: 90%; 
+        font-size: 18px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .viewAllContainer {
+        gap: 15px;
+    }
+
+    .viewTitle {
+        width: 90%; 
+        font-size: 16px; 
+    }
+}

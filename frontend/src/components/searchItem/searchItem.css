@@ -1,0 +1,157 @@
+.searchItem {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.436);
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+      flex-direction: row;
+  }
+}
+
+.siDesc {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+      align-items: flex-start;
+  }
+}
+
+.siImg {
+  width: 130px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  
+  @media (min-width: 768px) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.siTitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #265073;
+  text-align: center;
+
+  @media (min-width: 768px) {
+      text-align: left;
+      font-size: 22px;
+  }
+}
+
+.siSubtitle,
+.siDuration,
+.siDistance,
+.siCancelOp,
+.siRating {
+  font-size: 0.93rem;
+  margin-bottom: 5px;
+  color: #222;
+  text-align: center;
+
+  @media (min-width: 768px) {
+      text-align: left;
+      font-size: 1rem;
+  }
+}
+
+.siDistance{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.siDistance p{
+  color: #8831aa;
+  background-color: #8831aa6f;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.siFeatures{
+  font-size: 0.9rem;
+  text-align: center;
+
+  @media (min-width: 768px){
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+.siCancelOp {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(40, 123, 27);
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Georgia";
+}
+
+.siDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+
+  @media (min-width: 768px) {
+      align-items: flex-end;
+  }
+}
+
+.siDetailTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+      align-items: flex-end;
+  }
+}
+
+.siPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3174aa;
+  text-align: center;
+
+  > small {
+      font-size: 14px;
+      display: block;
+  }
+
+  @media (min-width: 768px) {
+      text-align: right;
+  }
+}
+
+.siCheckButton {
+  background-color: #265073;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &:hover {
+      background-color: #2650738e;
+      transform: translateY(-5px);
+      transition: all 0.6s;
+  }
+}
+
+.siTaxOp{
+  font-size: 14px;
+  margin: 10px 0px;
+}

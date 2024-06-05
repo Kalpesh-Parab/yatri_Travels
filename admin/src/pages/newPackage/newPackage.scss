@@ -1,0 +1,97 @@
+.new{
+    display: flex;
+    
+    flex: 1;
+
+    .newContainer{
+        flex: 5;
+        
+        .top, .bottom{
+            display: flex;
+            box-shadow: 4px 6px 10px 4px #2e2d2d3b;
+            padding: 10px;
+            margin: 20px;
+            flex-direction: column;
+
+            h1{
+                color: rgb(164, 152, 152);
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .left{
+                text-align: center;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .right{
+                flex: 1;
+
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    justify-content: space-between;
+
+                    .formInput{
+                        width: 40%;
+
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 2s0px;
+
+                            .icon{
+                                cursor: pointer;
+                            }
+                        }
+
+                        input{
+                            width: 100%;
+                            height: 22px;
+                            border: none;
+                            border-bottom: 1px solid rgb(184, 177, 177);
+                        }
+
+                        &:last-child{
+                            width: 100%;
+                        }
+
+                        select{
+                            appearance: none;
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            width: 100%;
+                            padding: 5px;
+                        }
+                    }
+
+                    button{
+                        width: 300px;
+                        height: 30px;
+                        border: none;
+                        background-color: rgb(202, 107, 201);
+                        border-radius: 15px;
+                        color: white;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+
+                        &:hover{
+                            background-color: rgb(91, 23, 100);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

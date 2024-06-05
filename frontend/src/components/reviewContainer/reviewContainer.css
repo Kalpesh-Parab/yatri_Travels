@@ -1,0 +1,43 @@
+.reviews-carousel {
+    margin-top: 5px;
+    min-width: 350px; 
+    max-width: 350px;
+    overflow: hidden; 
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease; 
+  }
+  
+  .review-card {
+    flex: 0 0 300px; 
+    padding: 20px;
+    margin-right: 10px; 
+    background-color: transparent;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.234);
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .reviews-carousel>h2 {
+    font-weight: 10px;
+    color: black;
+  }
+
+  .reviewBtnDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .leaveReviewBtn{
+    background-color: #336b99;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+  }

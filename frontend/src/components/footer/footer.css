@@ -1,0 +1,174 @@
+/* footer.css */
+.footer {
+  background-color: white;
+  color: black;
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+}
+
+.footer .top{
+  display: flex;
+  gap: 100px;
+}
+
+.fLists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ftitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
+
+}
+
+.fList p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+.sociallinks {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sociallinks a {
+  margin-right: 10px;
+  color:black;
+  width: 30px;
+}
+
+.socialLinks a:hover {
+  color: #e7b5b5;
+}
+
+
+.quickLinks a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+
+.fText {
+  text-align: center;
+  margin-top: 140px;
+  justify-content: center;
+}
+
+.reviewlogo{
+  width: 100px;
+}
+
+.columns{
+  display: flex;
+  gap: 40px;
+}
+
+.fColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.fColumn p{
+  font-size: 14px;
+}
+
+.footer .right{
+  display: flex;
+  gap: 100px;
+  margin-left: 130px;
+  justify-content: space-between;
+}
+
+.reviewCont{
+  margin-left: -150px;
+}
+
+@media (max-width: 768px) {
+  .footer{
+    margin-left: 0px;
+  }
+  .footer .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .right {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .columns {
+    display: none;
+  }
+
+  .fLists {
+    align-items: center;
+  }
+
+  .ftitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .fList p {
+    font-size: 14px;
+  }
+
+  .fText {
+    margin-top: 20px;
+  }
+
+  .reviewCont {
+    margin-left: 0;
+    margin-top: -80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .right {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .columns {
+    display: none;
+  }
+
+  .fLists {
+    align-items: center;
+  }
+
+  .ftitle {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .fList p {
+    font-size: 12px;
+  }
+
+  .fText {
+    margin-top: 15px;
+  }
+
+  .reviewCont {
+    margin-left: 0;
+  }
+}

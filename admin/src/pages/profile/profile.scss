@@ -1,0 +1,90 @@
+.profile {
+    display: flex;
+    width: 100%;
+  
+    .profileContainer {
+      flex: 6;
+  
+      .profileContent {
+        .top {
+          padding: 20px;
+          display: flex;
+          gap: 20px;
+  
+          .left {
+            flex: 1;
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            position: relative;
+  
+            .editButton {
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 15px;
+              font-size: 12px;
+              background-color: rgba(238, 145, 145, 0.377);
+              color: rgb(196, 25, 25);
+              cursor: pointer;
+              border-radius: 0px 0px 0px 5px;
+              transition: background-color 0.3s ease;
+  
+              &:hover {
+                background-color: rgba(238, 152, 149, 0.653);
+              }
+            }
+  
+            .item {
+              display: flex;
+              gap: 20px;
+  
+              .details {
+                .itemKey {
+                  font-weight: bold;
+                  color: gray;
+                  margin-right: 5px;
+                }
+  
+                .itemValue {
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+  
+          .right {
+            flex: 2;
+          }
+        }
+  
+        .bottom {
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 20px;
+          margin: 10px 20px;
+        }
+  
+        .title {
+          font-size: 26px;
+          color: rgba(244, 120, 120, 0.932);
+          margin-bottom: 20px;
+        }
+  
+        .save {
+            margin-top: 5px;
+            padding: 5px;
+            font-size: 14px;
+            background-color: rgba(238, 145, 145, 0.377);
+              color: rgb(196, 25, 25);
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+          
+            &:hover {
+                background-color: rgba(238, 152, 149, 0.653);
+            }
+          }
+          
+      }
+    }
+  }
+  

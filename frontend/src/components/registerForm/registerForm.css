@@ -1,0 +1,135 @@
+/* registerForm.css */
+
+.formContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+  background-color: #fff; 
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='6'><polygon points='6,0 12,6 0,6' fill='%23000'/></svg>") no-repeat right 10px center; /* Add custom arrow icon */
+}
+
+button[type="submit"] {
+  width: 108%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2d9596;
+  color: #fff; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #044f50; 
+}
+
+.required {
+  color: red; 
+}
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.securityQ {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%276%27><polygon points=%276,0 12,0 9,6%27 fill=%27%23000%27/></svg>');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: white;
+  color:black;
+  height: 40px; 
+  width: 108%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 16px;
+  color: #777;
+}
+
+.securityQ::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 10px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2712%27 height=%276%27><polygon points=%276,0 12,0 9,6%27 fill=%27%23000%27/></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(-50%) rotate(180deg); 
+}
+
+
+.linkToLogin{
+  color: #fff;
+  width: max-content;
+  border: none;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+}
+
+.log_in{
+  border: none;
+  padding: 10px 20px;
+  background-color: #2d9596;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.log_in:hover{
+  background-color: #044f50;
+}
+
+.regbox{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 20px;
+}

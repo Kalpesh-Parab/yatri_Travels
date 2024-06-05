@@ -1,0 +1,39 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .lcontainer {
+        width: 325px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+        .lInput {
+            width: 93%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          
+          .lButton {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          .lButton:hover {
+            background-color: #0056b3;
+          }
+
+          span{
+            color: red;
+          }
+    }
+  }

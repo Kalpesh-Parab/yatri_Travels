@@ -1,0 +1,148 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .listWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .listSearch {
+    flex: 1;
+    background-color: #76bed3;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+  }
+  
+  .lsTitle {
+    font-size: 20px;
+    color: #201f1f;
+    margin-bottom: 10px;
+  }
+  
+  .lsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .searchItemList {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  .lsItem > label {
+    font-size: 12px;
+  }
+  
+  .lsItem > input {
+    height: 30px;
+    border: none;
+    padding: 5px;
+  }
+  .lsItem > span {
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .lsOptions {
+    padding: 10px;
+  }
+  
+  .lsOptionItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #0f0f0f;
+    font-size: 12px;
+  }
+  
+  .lsOptionInput {
+    width: 50px;
+  }
+  
+  
+  .ssearch{
+    padding: 10px;
+    background-color: #265276;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .ssearch:hover {
+    background-color: #0f425a; 
+  }
+  
+  .listResult {
+    flex: 3;
+  }
+  
+  .alignment {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .destinationDropdown{
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%);
+    background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 8px 25px 8px 10px;
+    border-radius: 0; 
+    border: none; 
+    font-size: 15px; 
+  }
+
+  .lsOptionInputo{
+    width: 50px;
+    text-align: center;
+  }
+
+  .optionCounterButton{
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+  }
+
+  .lsOptionInput{
+    width: 75px;
+    margin-right: 22px;
+  }
+
+  .sBtn{
+    padding: 10px;
+    background-color: #265276;
+    color: white;
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .lsOptionText{
+    font-size: 13px;
+    font-weight: bold;
+  }

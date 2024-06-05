@@ -1,0 +1,115 @@
+.user {
+    display: flex;
+    flex: 1;
+
+    .userContainer {
+        flex: 5;
+
+        .profile_ {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .userBox {
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                width: 100%;
+                transition: box-shadow 0.3s;
+
+                &:hover {
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                }
+
+                .title {
+                    font-size: 24px;
+                    color: #333;
+                    margin-bottom: 10px;
+                }
+
+                .adminBtn {
+                    float: right;
+                    border: none;
+                    font-size: 14px;
+                    width: 100px;
+                    margin-top: -10px;
+                    margin-right: -10px;
+                    border-radius: 0 0 0 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    
+                    padding: 8px 16px;
+                    transition: background-color 0.3s;
+
+                    &.makeAdmin {
+                        background-color: #72f19c;
+                        
+                        &:hover {
+                            background-color: #30f572;
+                        }
+                    }
+                    
+                    &.removeAdmin {
+                        background-color: #f36363;
+                        
+                        &:hover {
+                            background-color: #f82b2b;
+                        }
+                    }
+                }
+
+                .userDetails {
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+
+                    .detailItem {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+
+                        .itemKey {
+                            font-weight: bold;
+                            color: #555;
+                            margin-right: 5px;
+                        }
+
+                        .itemValue {
+                            font-weight: 300;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+
+            .enquiriesBox {
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+                background-color: #fff;
+                transition: box-shadow 0.3s;
+
+                &:hover {
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                }
+
+                .enquiryTitle {
+                    font-size: 20px;
+                    color: #333;
+                    margin-bottom: 15px;
+                }
+
+                .table {
+                    margin-top: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+
+                    .tableCell {
+                        font-weight: bold;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+
+.f {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.fItem {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 6px 4px #6464649d;
+  transition: transform 0.3s ease;
+}
+
+.fItem:hover {
+  transform: translateY(-5px);
+}
+
+.fImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.fName {
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  padding: 10px;
+}
+
+.fCity {
+  display: block;
+  color: #555555;
+  padding: 0 10px 10px;
+}
+
+.fPrice {
+  display: flex;
+  color: #4b77d0;
+  font-weight: bold;
+  padding: 0 10px 10px;
+  align-items: center;
+  gap: 5px;
+}
+
+.fPrice p {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .f {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .f {
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+  }
+
+  .fItem {
+    box-shadow: 2px 3px 2px #6464649d; 
+  }
+
+  .fImg {
+    height: 200px;
+  }
+
+  .fName,
+  .fCity,
+  .fPrice {
+    padding: 5px 10px;
+   }
+
+  .fPrice {
+    gap: 3px; 
+  }
+}

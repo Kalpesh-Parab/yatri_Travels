@@ -1,0 +1,221 @@
+.navbar {
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; 
+}
+
+.navGradientLeft,
+.navGradientRight {
+  position: absolute;
+  top: 0;
+  width: 20%; 
+  height: 100%;
+}
+
+.navGradientLeft {
+  left: 0;
+  background: linear-gradient(to right, #265073, transparent);
+}
+
+.navGradientRight {
+  right: 0;
+  background: linear-gradient(to left, #265073, transparent);
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: #265073;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navContainer p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-img {
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  display: block;
+  background-color: white;
+  z-index: 10;
+}
+
+.h-logo {
+  font-weight: 600;
+  font-size: 20px;
+  align-items: flex-start;
+  padding: -15px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  font-style: normal;
+  margin-right: 20px; 
+}
+
+.icon-bar-navbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.navbarFacebook,
+.navbarInstagram,
+.navbarGoogle,
+.navbarWhatsapp {
+  background: transparent;
+}
+
+.iconColorNavbarWhatsapp,
+.iconColorNavbarGoogle,
+.iconColorNavbarInstagram,
+.iconColorNavbarFacebook {
+  color: #265073;
+}
+
+.h-logo span {
+  display: inline-block;
+  animation: slideIn 0.5s forwards;
+}
+
+.dot {
+  display: inline-block;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.navbarFacebook {
+  animation: bounce 2s infinite alternate 0.1s;
+}
+
+.navbarInstagram {
+  animation: bounce 2s infinite alternate 0.2s;
+}
+
+.navbarGoogle {
+  animation: bounce 2s infinite alternate 0.3s;
+}
+
+.navbarWhatsapp {
+  animation: bounce 2s infinite alternate 0.4s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.h-logo span {
+  display: inline-block;
+  animation: slideIn 0.5s forwards;
+}
+
+.dot {
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .navContainer p {
+    font-size: x-small;
+    margin-left: 10px; 
+  }
+
+  .h-logo {
+    font-size: 16px;
+    margin-left: 2px; 
+  }
+
+  .navItems {
+    margin-right: 10px; 
+    font-size: xx-small;
+    gap: 5px;
+  }
+  .logo-img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navContainer {
+    width: 100%;
+    max-width: 1024px;
+    color: #265073;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .navGradientLeft,
+  .navGradientRight {
+    position: absolute;
+    top: 0;
+    width: 20%; 
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .navGradientLeft {
+    left: 0;
+    background: linear-gradient(to right, #265073, transparent);
+  }
+  
+  .navGradientRight {
+    right: 0;
+    background: linear-gradient(to left, #265073, transparent);
+  }  
+
+  .h-logo span{
+      display: none;
+    }
+
+  .logo-img{
+    width: 60px;
+    background-color: transparent;
+  }
+}
